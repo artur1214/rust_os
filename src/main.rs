@@ -17,10 +17,8 @@ pub mod ports;
 
 
 use core::panic::PanicInfo;
-
 use crate::serial_buffer::SERIAL;
 
-//qemu-system-x86_64 -drive format=raw,file=/home/artur1214/Desktop/os/target/x86_64-rust_os/debug/bootimage-rust_os.bin
 /// This function is called on panic.
 #[panic_handler]
 #[cfg(not(test))] // don't use in test mode

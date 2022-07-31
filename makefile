@@ -3,3 +3,5 @@ build:
 all: build
 clean:
 	rmdir /s /q target
+test:
+	cargo test
